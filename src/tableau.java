@@ -13,9 +13,7 @@ public class tableau {
 
         scanner.nextLine();
 
-     
         nourriture = new String[nombre];
-
         
         for (int i = 0; i < nourriture.length; i++) {
             System.out.println("Entrez une nourriture :");
@@ -23,8 +21,8 @@ public class tableau {
             System.out.println("Nourriture ajoutée : " + nourriture[i]); 
         }
 
-    
         System.out.println("\nListe des nourritures dans ton plat :");
+        
         for (String graille : nourriture) {
             System.out.println(graille);
         }
