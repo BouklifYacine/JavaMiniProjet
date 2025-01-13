@@ -5,12 +5,12 @@ public class Quizz {
 
         Scanner scanner = new Scanner(System.in);
 
-        String[] questions = { "Quel est le meilleur FPS?", "Qui est le meilleur DC de l'histoire du foot? ",
+        String[] questions = { "Quel est le meilleur FPS?", "Qui est le meilleur DC de l'histoire du foot? (The Best Ever) ",
                 "Quel est le prénom de Hbiba? " };
 
         String[][] options = {
                 { "1. Valorant ", "2. CSGO ", "3. COD" },
-                { " 1. Van Dijk ", "2. Sergio Ramos ", "3. Maldini " },
+                { "1. Van Dijk ", "2. Sergio Ramos ", "3. Maldini " },
                 { "1. Cassandra", "2. Candice", "3. Norhane" } };
 
         int[] reponses = { 2, 1, 3 };
