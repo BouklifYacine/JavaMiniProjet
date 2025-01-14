@@ -4,9 +4,7 @@ public class Poo1 {
     Chien Rex = new Chien();
     
     Rex.poil();
-  
-   
- 
+    Rex.carnivore();
 
   }
 }
