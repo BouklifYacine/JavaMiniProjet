@@ -1,11 +1,11 @@
-public class Chien extends Animal {
+public class Chien implements Animal {
 
-       Chien(String prenom) {
-        super(prenom);
-    }
+       @Override
+       public void poil(){
+System.out.println("Le chien a des poils ");
+       };
+     }
 
-    void Moche(){
-        System.out.println("Le chien est Moche et il s'appelle : " + this.prenom);
-       }
-    }
+
+      
 
