@@ -14,7 +14,7 @@ public class Voiture {
         this.nombre = nombre;
         this.marque = marque ; 
         this.carburant = carburant;
-       
+        nombrevoiture++;
     };
 
  
