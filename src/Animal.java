@@ -10,28 +10,29 @@ public class Animal {
         this.race = race;
     }
 
-    String getRace(){
+    String getRace() {
         return this.race;
     }
-    String getCouleur(){
+
+    String getCouleur() {
         return this.couleur;
-        
-    }
-    int getPrix(){
 
-        if(this.prix <= 10){
+    }
+
+    int getPrix() {
+
+        if (this.prix <= 10) {
             return 2000;
+        } else {
+            return this.prix;
         }
-        else {
-            return this.prix ;
-        }  
     }
 
-    void setCouleur(String couleur){
+    void setCouleur(String couleur) {
         this.couleur = couleur;
     }
 
-    void setPrix(int prix){
+    void setPrix(int prix) {
         this.prix = prix;
     }
 
