@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class Poo1 {
@@ -44,7 +45,23 @@ int index = tableau.indexOf(50);
 System.out.println(index);
 
 tableau.size();
-    
+
+try {
+  int nombretableau = tableau.get(9);
+  System.out.println(nombretableau);
+} catch (Exception error) {
+  System.out.println("Voici l'erreur : " + error );
+}
+
+
+
+try(FileWriter writer = new FileWriter("test.txt")) {
+  writer.write("J'aime les Pizzas boisées sans légumes");
+  System.out.println("Le fichier est envoyé");
+} catch (Exception error) {
+ System.out.println("Voici l'erreur : " + error);
+}
+
 
   }
 
