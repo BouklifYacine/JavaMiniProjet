@@ -12,7 +12,7 @@ public class Poo1 {
 
     ArrayList<Integer> tableau = new ArrayList<>();
 
-    tableau.add(3);
+    tableau.add(400);
     tableau.add(6);
     tableau.add(9);
 
@@ -25,17 +25,25 @@ public class Poo1 {
 
  System.out.println(tableau);
 
- int taille = tableau.size();
  tableau.set(1, 50);
  System.out.println(tableau);
- System.out.println(taille);
 
- if(tableau.contains(40)){
+
+ if(tableau.contains(50)){
   System.out.println("Y'a bien 50 dans cette liste");
  }
  else {
   System.out.println("Y'a pas 50 ");
  }
+
+tableau.forEach(elements -> System.out.println(elements));
+tableau.sort((a, b) -> a.compareTo(b));
+System.out.println(tableau);
+
+int index = tableau.indexOf(50);
+System.out.println(index);
+
+tableau.size();
     
 
   }
