@@ -1,5 +1,5 @@
-public interface Animal {
+public abstract class Animal {
 
-void poil();
+abstract void Poly();
 
 }

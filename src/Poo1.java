@@ -1,10 +1,14 @@
 public class Poo1 {
   public static void main(String[] args) {
-   
-    Chien Rex = new Chien();
-    
-    Rex.poil();
-    Rex.carnivore();
+
+    Chien rex = new Chien();
+    Chat Minette = new Chat();
+
+    Animal[] animals = { rex, Minette };
+
+    for (Animal animaux : animals) {
+      animaux.Poly();
+    }
 
   }
 }

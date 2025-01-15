@@ -1,12 +1,8 @@
-public class Chien implements Animal, Carnivore {
+public class Chien extends Animal {
 
-    @Override
-    public void poil() {
-        System.out.println("Le chien a des poils ");
+    void Poly(){
+        System.out.println("Je suis un chien ");
     };
 
-    @Override
-    public void carnivore(){
-        System.out.println("Le chien est aussi Carnivore");
-    };
+
 }
