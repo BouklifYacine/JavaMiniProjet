@@ -1,14 +1,18 @@
 public class Poo1 {
   public static void main(String[] args) {
 
-    Chien rex = new Chien();
-    Chat Minette = new Chat();
+    Animal animal = new Animal("Pitbull", "Noir", 10);
 
-    Animal[] animals = { rex, Minette };
+    animal.setCouleur("Multicolor");
+    animal.setPrix(100000);
 
-    for (Animal animaux : animals) {
-      animaux.Poly();
+    System.out.println(animal.getRace() + " " +  animal.getCouleur()  + " " + " " + animal.getPrix());
+   
     }
-
+    
   }
-}
+
+
+
+
+
