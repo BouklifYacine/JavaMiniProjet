@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 
@@ -46,20 +48,16 @@ System.out.println(index);
 
 tableau.size();
 
-try {
-  int nombretableau = tableau.get(9);
-  System.out.println(nombretableau);
+String chemin = "F:\\Documents\\test.txt";
+
+try {BufferedReader reader = new BufferedReader(new FileReader(chemin));
+  System.out.println("Le fichier est lu");
+  String ligne; 
+  while ((ligne = reader.readLine()) != null){
+    System.out.println(ligne);
+  }
 } catch (Exception error) {
-  System.out.println("Voici l'erreur : " + error );
-}
-
-
-
-try(FileWriter writer = new FileWriter("test.txt")) {
-  writer.write("J'aime les Pizzas boisées sans légumes");
-  System.out.println("Le fichier est envoyé");
-} catch (Exception error) {
- System.out.println("Voici l'erreur : " + error);
+  System.out.println("Voici l'erreur de la lecture : " + error);
 }
 
 
